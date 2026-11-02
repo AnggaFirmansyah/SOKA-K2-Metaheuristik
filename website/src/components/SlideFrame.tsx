@@ -9,6 +9,7 @@ export default function SlideFrame({ bg, children }: Props) {
                 position: 'fixed',
                 inset: 0,
                 containerType: 'inline-size',
+                background: '#141416',
                 backgroundImage: bg ? `url(${bg})` : undefined,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

@@ -13,28 +13,100 @@ export default function Slide01() {
                 position: 'absolute',
                 inset: 0,
                 display: 'flex',
-                flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                textAlign: 'center',
-                textShadow: '0 1px 4px rgba(0,0,0,0.3)',
                 fontFamily: 'Inter, system-ui, sans-serif',
             }}
         >
-            <h1 style={{ fontSize: '2.8cqw', fontWeight: 700, margin: 0 }}>
-                Algoritma Metaheuristik
-            </h1>
-            <h2 style={{ fontSize: '1.6cqw', fontWeight: 600, margin: '0.8cqw 0 0' }}>
-                Ant Lion Optimizer (ALO) dan Grasshopper Optimization Algorithm (GOA)
-            </h2>
+            <div
+                style={{
+                    width: '60cqw',
+                    padding: '4cqw 5cqw',
+                    borderRadius: '2cqw',
+                    background: 'rgba(20, 12, 22, 0.32)',
+                    border: '1px solid rgba(255, 255, 255, 0.22)',
+                    backdropFilter: 'blur(48px)',
+                    WebkitBackdropFilter: 'blur(48px)',
+                    boxShadow: '0 2cqw 6cqw rgba(0, 0, 0, 0.25)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '2.4cqw',
+                }}
+            >
+                <span
+                    style={{
+                        alignSelf: 'flex-start',
+                        fontSize: '0.9cqw',
+                        fontWeight: 600,
+                        padding: '0.5cqw 1.1cqw',
+                        borderRadius: '999px',
+                        background: 'rgba(255, 255, 255, 0.92)',
+                        color: '#111',
+                    }}
+                >
+                    Tugas SOKA K2
+                </span>
 
-            <div style={{ marginTop: '6cqw', fontSize: '1.1cqw', lineHeight: 1.6 }}>
-                <p style={{ margin: 0 }}>Anggota Kelompok:</p>
-                <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-                    {members.map((m) => (
-                        <li key={m}>• {m}</li>
-                    ))}
-                </ul>
+                <div>
+                    <h1
+                        style={{
+                            margin: 0,
+                            fontSize: '3.6cqw',
+                            fontWeight: 800,
+                            lineHeight: 1.05,
+                            letterSpacing: '-0.02em',
+                            color: '#fff',
+                        }}
+                    >
+                        Algoritma Metaheuristik
+                    </h1>
+                    <h2
+                        style={{
+                            margin: '1cqw 0 0',
+                            fontSize: '1.4cqw',
+                            fontWeight: 500,
+                            lineHeight: 1.4,
+                            color: 'rgba(255, 255, 255, 0.82)',
+                        }}
+                    >
+                        Ant Lion Optimizer (ALO) dan Grasshopper Optimization Algorithm (GOA)
+                    </h2>
+                </div>
+
+                <div style={{ height: '1px', background: 'rgba(255, 255, 255, 0.2)' }} />
+
+                <div>
+                    <p
+                        style={{
+                            margin: '0 0 1cqw',
+                            fontSize: '0.95cqw',
+                            color: 'rgba(255, 255, 255, 0.6)',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.12em',
+                        }}
+                    >
+                        Anggota Kelompok
+                    </p>
+                    <div
+                        style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            columnGap: '3cqw',
+                            rowGap: '0.9cqw',
+                            fontSize: '1.15cqw',
+                            color: '#fff',
+                        }}
+                    >
+                        {members.map((m, i) => (
+                            <div key={m} style={{ display: 'flex', gap: '1cqw', alignItems: 'baseline' }}>
+                                <span style={{ color: 'rgba(255, 255, 255, 0.5)', minWidth: '1.6cqw' }}>
+                                    {String(i + 1).padStart(2, '0')}
+                                </span>
+                                <span>{m}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     )

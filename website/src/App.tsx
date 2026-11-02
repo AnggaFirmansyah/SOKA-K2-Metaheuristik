@@ -1,16 +1,30 @@
 import { useEffect, useState, type CSSProperties } from 'react'
 import SlideFrame from './components/SlideFrame'
 import Slide01 from './slides/01-pendahuluan'
+import Slide02 from './slides/02-metaheuristik'
+import Slide03 from './slides/03-alo'
+import Slide04 from './slides/04-cara-alo'
+import Slide05 from './slides/05-goa'
+import Slide06 from './slides/06-cara-goa'
 
-const slides = [{ Component: Slide01, bg: '/bg.png' }]
+const BG = '/bg.jpg'
+
+const slides = [
+  { Component: Slide01, bg: BG },
+  { Component: Slide02, bg: BG },
+  { Component: Slide03, bg: BG },
+  { Component: Slide04, bg: BG },
+  { Component: Slide05, bg: BG },
+  { Component: Slide06, bg: BG },
+]
 
 const btn: CSSProperties = {
   border: 'none',
   padding: 0,
   borderRadius: '50%',
   cursor: 'pointer',
-  width: '3cqw',
-  height: '3cqw',
+  width: '3.6cqw',
+  height: '3.6cqw',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -22,7 +36,7 @@ const btn: CSSProperties = {
 function Chevron({ dir }: { dir: 'left' | 'right' }) {
   const d = dir === 'left' ? 'M15 6l-6 6 6 6' : 'M9 6l6 6-6 6'
   return (
-    <svg viewBox="0 0 24 24" style={{ width: '50%', height: '50%' }} aria-hidden="true">
+    <svg viewBox="0 0 24 24" style={{ width: '42%', height: '42%' }} aria-hidden="true">
       <path
         d={d}
         fill="none"
@@ -69,10 +83,10 @@ export default function App() {
       <div
         style={{
           position: 'absolute',
-          right: '3cqw',
-          bottom: '3cqw',
+          right: '4cqmin',
+          bottom: '4cqmin',
           display: 'flex',
-          gap: '1.5cqw',
+          gap: '1.4cqmin',
         }}
       >
         <button onClick={prev} aria-label="Sebelumnya" style={btn}>
