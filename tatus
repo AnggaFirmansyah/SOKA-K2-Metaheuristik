@@ -1,0 +1,40 @@
+ website/.gitignore                      |   24 [31m-[m
+ website/README.md                       |   75 [31m-[m
+ website/eslint.config.js                |   22 [31m-[m
+ website/index.html                      |   13 [31m-[m
+ website/package-lock.json               | 2787 [31m-------------------------------[m
+ website/package.json                    |   32 [31m-[m
+ website/public/arrow-left.png           |  Bin [31m4515[m -> [32m0[m bytes
+ website/public/arrow-left.svg           |    7 [31m-[m
+ website/public/arrow-right.png          |  Bin [31m4546[m -> [32m0[m bytes
+ website/public/arrow-right.svg          |    7 [31m-[m
+ website/public/bg.jpg                   |  Bin [31m6583123[m -> [32m0[m bytes
+ website/public/bg.png                   |  Bin [31m6058018[m -> [32m0[m bytes
+ website/public/favicon.svg              |    1 [31m-[m
+ website/public/icons.svg                |   24 [31m-[m
+ website/src/App.tsx                     |  101 [31m--[m
+ website/src/assets/hero.png             |  Bin [31m13057[m -> [32m0[m bytes
+ website/src/assets/react.svg            |    1 [31m-[m
+ website/src/assets/vite.svg             |    1 [31m-[m
+ website/src/components/Field.tsx        |   87 [31m-[m
+ website/src/components/Page.tsx         |   42 [31m-[m
+ website/src/components/SlideFrame.tsx   |   23 [31m-[m
+ website/src/components/Tex.tsx          |    7 [31m-[m
+ website/src/components/ui.ts            |   14 [31m-[m
+ website/src/index.css                   |   24 [31m-[m
+ website/src/lib/alo.ts                  |   58 [31m-[m
+ website/src/lib/goa.ts                  |   34 [31m-[m
+ website/src/lib/landscape.ts            |   45 [31m-[m
+ website/src/lib/useEased.ts             |   36 [31m-[m
+ website/src/main.tsx                    |   10 [31m-[m
+ website/src/slides/01-pendahuluan.tsx   |  113 [31m--[m
+ website/src/slides/02-metaheuristik.tsx |  186 [31m---[m
+ website/src/slides/03-alo.tsx           |   99 [31m--[m
+ website/src/slides/04-cara-alo.tsx      |  331 [31m----[m
+ website/src/slides/05-goa.tsx           |   95 [31m--[m
+ website/src/slides/06-cara-goa.tsx      |  327 [31m----[m
+ website/tsconfig.app.json               |   26 [31m-[m
+ website/tsconfig.json                   |    7 [31m-[m
+ website/tsconfig.node.json              |   23 [31m-[m
+ website/vite.config.ts                  |    7 [31m-[m
+ 39 files changed, 4689 deletions(-)
